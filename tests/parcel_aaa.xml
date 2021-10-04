@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><wfs:FeatureCollection timeStamp="2020-10-21T08:18:00.42+02:00" numberReturned="2803" numberMatched="unknown" xmlns="http://repository.gdi-de.org/schemas/adv/produkt/alkis-vereinfacht/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://repository.gdi-de.org/schemas/adv/produkt/alkis-vereinfacht/2.0 http://www.wfs.nrw.de/aaa-suite/schema/AAA-vereinfacht/2.0/schema/ALKIS-vereinfacht.xsd http://www.opengis.net/wfs/2.0 http://www.wfs.nrw.de/aaa-suite/schema/ogc/wfs/2.0/wfs.xsd http://www.opengis.net/gml/3.2 http://www.wfs.nrw.de/aaa-suite/schema/ogc/gml/3.2.1/gml.xsd http://www.isotc211.org/2005/gco http://www.wfs.nrw.de/aaa-suite/schema/ogc/iso/19139/20070417/gco/gco.xsd http://www.isotc211.org/2005/gmd http://www.wfs.nrw.de/aaa-suite/schema/ogc/iso/19139/20070417/gmd/gmd.xsd">
+<wfs:boundedBy>
+<gml:Envelope srsName="urn:ogc:def:crs:EPSG::25832" srsDimension="2">
+<gml:lowerCorner>372701.764 5639142.237</gml:lowerCorner>
+<gml:upperCorner>375936.243 5641875.234</gml:upperCorner>
+</gml:Envelope>
+</wfs:boundedBy>
+<wfs:member>
+  <Flurstueck gml:id="DENW55AL0000dufcFL">
+    <gml:identifier codeSpace="urn:adv:oid:">urn:adv:oid:DENW55AL0000dufcFL</gml:identifier>
+    <idflurst>DENW55AL0000dufc</idflurst>
+    <flstkennz>05453300101559______</flstkennz>
+    <land>Nordrhein-Westfalen</land>
+    <landschl>05</landschl>
+    <gemarkung>Lüghausen</gemarkung>
+    <gemaschl>054533</gemaschl>
+    <flur>001</flur>
+    <flurschl>054533001</flurschl>
+    <flstnrzae>1559</flstnrzae>
+    <regbezirk>Köln</regbezirk>
+    <regbezschl>053</regbezschl>
+    <kreis>Rheinisch-Bergischer Kreis</kreis>
+    <kreisschl>05378</kreisschl>
+    <gemeinde>Rösrath</gemeinde>
+    <gmdschl>05378028</gmdschl>
+    <oid>DENW45AL0000dufcFL</oid>
+    <aktualit>2017-06-01Z</aktualit>
+    <geometrie>
+      <gml:MultiSurface gml:id="flurstueck.id.15987944.geometrie.Geom_0" srsName="urn:ogc:def:crs:EPSG::25832" srsDimension="2">
+        <gml:surfaceMember>
+          <gml:Polygon gml:id="flurstueck.id.15987944.geometrie.Geom_1">
+            <gml:exterior>
+              <gml:LinearRing>
+                <gml:posList>
+                  372747.174 5640000.54 372749.287 5639999.624 372750.237 5640000.873 372750.398 5640001.276 372749.797 5640001.14 372747.174 5640000.54
+                </gml:posList>
+              </gml:LinearRing>
+            </gml:exterior>
+          </gml:Polygon>
+        </gml:surfaceMember>
+      </gml:MultiSurface>
+    </geometrie>
+    <flaeche>2.00</flaeche>
+    <abwrecht>Kein abweichender Rechtszustand</abwrecht>
+    <lagebeztxt>Hahnenberg</lagebeztxt>
+    <tntxt>Weg / Fahrweg;2</tntxt>
+  </Flurstueck>
+</wfs:member>
+</wfs:FeatureCollection>
