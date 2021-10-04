@@ -4,7 +4,14 @@ import os
 
 
 class ParcelInfo:
-    """Represents a piece of information to be retrieved from the input file"""
+    """
+    Represents a piece of information to be retrieved from the input file
+
+    Stores a dictionary of valid data formats, each mapping to a name of a tag or a key,
+    under which the piece of information is found in the corresponding format.
+    Upon calling load_from_data(), the correct tag is used to find the information and assign it
+    to the 'value' attribute, which can be later printed using show().
+    """
 
     missing_text = 'Brak'  # String to display if the value isn't found
 
@@ -37,9 +44,11 @@ class ParcelInfo:
 # Valid data formats used as arguments for the program
 valid_formats = ['nas', 'aaa']
 
-# Initialize all required pieces of information as ParcelInfo objects.
-# The first argument is the label for display.
-# The following arguments should map to the array of valid formats as tags or keys used to retrieve the information.
+"""
+Initialize all required pieces of information as ParcelInfo objects.
+The first argument is the label for display.
+The following arguments should map to the array of valid formats as tags or keys used to retrieve the information.
+"""
 info = [
     ParcelInfo('Numer działki', 'flurstueckskennzeichen', 'flstkennz'),
     ParcelInfo('Wielkość działki', 'amtlicheFlaeche', 'flaeche'),
@@ -51,6 +60,7 @@ info = [
 
 
 def main(data_format, file):
+    """Parse the file and iterate through the information objects defined in the 'info' array, printing the values"""
     file_format = os.path.splitext(file)[1]
     data = parse_file(file_format, file)
     for i in info:
@@ -67,7 +77,7 @@ def parse_file(file_format, file):
 
 
 def parse_arguments():
-    parser = argparse.ArgumentParser(description='Prints information about a parcel')
+    parser = argparse.ArgumentParser(description='Returns information about a parcel')
     parser.add_argument('data_format', help='data format used in the target file', choices=valid_formats)
     parser.add_argument('file', help='name of file containing the information')
     arguments_namespace = parser.parse_args()
