@@ -67,7 +67,7 @@ def parse_file(file_format, file):
 
 
 def parse_arguments():
-    parser = argparse.ArgumentParser(description='Returns information about a parcel')
+    parser = argparse.ArgumentParser(description='Prints information about a parcel')
     parser.add_argument('data_format', help='data format used in the target file', choices=valid_formats)
     parser.add_argument('file', help='name of file containing the information')
     arguments_namespace = parser.parse_args()
