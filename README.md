@@ -2,7 +2,7 @@
 
 Program zwraca informacje na temat działek z plików xml w formatach NAS oraz AAA.
 
-Napisany w Python wersja 3.9.7.
+Napisany w Python 3.9.7.
 
 ## Zastosowanie
 
