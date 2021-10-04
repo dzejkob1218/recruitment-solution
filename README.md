@@ -1,4 +1,4 @@
-# Rozwiązanie zadania rekrutacyjnego Bitcomp - Jakub Gądek
+# Rozwiązanie zadania rekrutacyjnego - Jakub Gądek
 
 Program zwraca informacje na temat działek z plików xml w formatach NAS oraz AAA.
 
